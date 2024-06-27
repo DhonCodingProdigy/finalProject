@@ -22,8 +22,8 @@ const Watch =()=> {
                     name={watch.watch}
                     imgUrl={watch.imgURL}
                     price={watch.price}
-                    path={'/watch'}
-                    pathId={pathId}
+                    path={'watch'}
+                    // pathId={'watch'}
         />
     })
 

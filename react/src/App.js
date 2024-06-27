@@ -8,6 +8,7 @@ import Form from "./components/Form"
 import Card from "./components/Card"
 import Home from "./components/Home"
 import Watch from "./components/Watch"
+import Single from "./components/Single"
 import axios from "axios"
 
 
@@ -18,7 +19,7 @@ const App =()=> {
         fName: '',
         lName: '',
         email: '',
-        phone: '',
+        username: '',
         password: ''
     })
 
@@ -61,6 +62,9 @@ const App =()=> {
                         handleSubmit={handleSubmit}
                 />} />
                 <Route path='/watches' element={ <Watch />} />
+                <Route path='/:path/:id' element=
+                {<Single />} />
+                <Route path="*" element={ <Error /> } />
             </Routes>
             <Footer />
         </>

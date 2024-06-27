@@ -49,13 +49,13 @@ const Form =( { formData, handleChange, handleSubmit } )=> {
                         </div>
                         <div className="mb-3 form-check form-div">
                             <label className="form-label text-capitalize">
-                                phone
+                                username
                             </label>
                             <input 
-                                type="phone"
-                                id='phone'
-                                name="phone"
-                                value={formData.phone}
+                                type="text"
+                                id='username'
+                                name="username"
+                                value={formData.username}
                                 onChange={handleChange}
                                 className="form-control"
                             />
