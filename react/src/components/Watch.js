@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react'
 import axios from "axios"
 import Card from './Card'
 
+
+
 const Watch =()=> {
+
 
     const [ watch, setWatch ] = useState([])
 
@@ -14,8 +17,9 @@ const Watch =()=> {
 
     const watchCards = watch.map(watch =>{
 
-        let pathId
+        // let pathId
 
+        // .map object
         return <Card 
                     key={watch.watch_id}
                     id={watch.watch_id}
@@ -27,10 +31,11 @@ const Watch =()=> {
         />
     })
 
+    // passing in watchCards in jsx
     return (
         <main className="main" id='watchMain'>
             <div className='container'>
-                <h2>Watches</h2>
+                <h2 className='watch-h2'>Watches</h2>
                 <div className='row row-cols-1 row-cols-md-5 g-4'>
                     { watchCards }
                 </div>

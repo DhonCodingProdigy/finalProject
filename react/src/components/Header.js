@@ -5,15 +5,15 @@ const Header =()=> {
     return(
         <header className='header'>
             <div className='container'>
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <h1 className='heading'>Dhon's Exotic Watches</h1>
+                <div className='row justify-content-center'>
+                    <div className='col-md-9'>
+                        <h1 className='heading text-center'>DhØn's ExØtic Watches</h1>
                     </div>
                     <div className='col-md-4'>
                         <nav className='nav justify-content-between' id='topNav'>
-                            <Link to='/'>home </Link>
-                            <Link to='/login'>login</Link>
-                            <Link to='/watches'>watches</Link>
+                            <Link to='/' className='home-link text-capitalize' data-replace="home">home</Link>
+                            <Link to='/login' className='login-link text-capitalize' data-replace="login">login</Link>
+                            <Link to='/watches' className='watch-link text-capitalize' data-replace="watches">watches</Link>
                             <Outlet />
                         </nav>
                     </div>

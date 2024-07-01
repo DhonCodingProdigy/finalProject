@@ -14,7 +14,7 @@ import axios from "axios"
 
 const App =()=> {
 
-
+// Initalizing state
     const [formData, setFormData] = useState({
         fName: '',
         lName: '',
@@ -25,10 +25,13 @@ const App =()=> {
 
     const [ users, setUsers] = useState([])
 
+    // fetch call
     useEffect(() => {
         axios.get(`http://localhost:3005/api/user`).then(res => setUsers(res.data))
     }, [])
 
+
+// Form functionality
     const handleChange = (event)=> {
         const {name, value} = event.target
 
@@ -50,6 +53,8 @@ const App =()=> {
         })
     }
     
+
+    // Route paths and connecting my components
     return(
         <>
             <Header />

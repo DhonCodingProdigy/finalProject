@@ -1,0 +1,90 @@
+*{box-sizing: border-box;}
+
+:root {
+    --h1: #ef233c;
+    --headerbg: #0a0908;
+    --bodybg: #131515;
+    --font: "Indie Flower", cursive;
+
+}
+
+body {
+    background-color: var(--bodybg);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--headerbg);
+    border-bottom: solid #ffffff 1px;
+    padding: 15px;
+}
+
+.heading {
+    color:#ef233c;
+    font-family: var(--font);
+}
+
+.home-link, .login-link, .watch-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+label {
+    color: #ffffff;
+}
+
+.home-heading {
+    margin-top: 30px;
+}
+
+.footer-text {
+    margin-top: 30px;
+    }
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+
+    .form-h2, .watch-h2, .home-heading {
+        color: white;
+    }
+
+
+/* 
+
+CSS underline styling which is not my creation I got this from codepen https://codepen.io/team/css-tricks/pen/xxPOgmZ
+
+*/
+
+
+a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+    }
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--h1);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    }
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    }
